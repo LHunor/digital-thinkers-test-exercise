@@ -3,7 +3,7 @@ const data = [
         id: 0,
         letter: 'A',
         price: 1350,
-        date: new Date(2020, 10, 12),
+        date: new Date("2020-11-12"),
         soup: {
             description: {
                 hun: 'Májgaluska leves_kis adag',
@@ -30,7 +30,7 @@ const data = [
         id: 1,
         letter: 'B',
         price: 1450,
-        date: new Date(2020, 10, 12),
+        date: new Date("2020-11-12"),
         soup: {
             description: {
                 hun: 'Sütőtök krémleves_kis adag',
