@@ -30,22 +30,22 @@ export default () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography>
-                            Soup: {menu.soup.description.eng}
+                            {menu.soup}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography color="textSecondary" style={{ display: "inline-block" }}>
-                            allergens: {menu.soup.allergens.map(a => `${a} `)}
+                            allergens: {menu.soupAllergenSRCs.map((src, id) => <img src={src} key={id} />)}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography>
-                            Main course: {menu.mainCourse.description.eng}
+                            {menu.mainCourse}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography color="textSecondary">
-                            allergens: {menu.mainCourse.allergens.map(a => `${a} `)}
+                            allergens: {menu.mainCourseAllergenSRCs.map((src, id) => <img src={src} key={id} />)}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
